@@ -61,9 +61,9 @@ const Badge: BsPrefixRefForwardingComponent<'span', BadgeProps> =
           className={classNames(
             className,
             prefix,
-            pill && `rounded-pill`,
-            text && `text-${text}`,
-            bg && `bg-${bg}`,
+            pill && `${prefix}-rounded-pill`,
+            text && `${prefix}-text-${text}`,
+            bg && `${prefix}-bg-${bg}`,
           )}
         />
       );
